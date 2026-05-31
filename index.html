@@ -3,59 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShareSpace</title>
+    <title>Housebox</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="https://via.placeholder.com/150x30.png?text=ShareSpace" alt="ShareSpace Logo">
+                <a href="index.html">
+                    <img src="assets/ulol.png" alt="Housebox">
+                    <span>HOUSE<span>BOX</span></span>
+                </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Find Storage</a></li>
-                <li><a href="#">Become a Host</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="pages/find-storage.html">Find Storage</a></li>
+                <li><a href="pages/become-a-host.html">Become a Host</a></li>
+                <li><a href="pages/how-it-works.html">How It Works</a></li>
+                <li><a href="pages/about-us.html">About Us</a></li>
             </ul>
             <div class="nav-right">
                 <a href="#" class="lang"><i class="fas fa-globe"></i> Philippines - English</a>
-                <a href="#" class="login">Log in</a>
-                <a href="#" class="signup">Sign Up</a>
+                <a href="pages/login.html" class="login">Log in</a>
+                <a href="pages/signup.html" class="signup">Sign Up</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>The Airbnb for Your Stuff</h1>
-                <p>Find affordable, convenient storage space in your neighborhood.<br>Or earn money by sharing your extra space.</p>
-                <button class="book-now">Find Storage</button>
+            <div class="hero-text">
+                <h1>The Airbnb for Your Stuff.</h1>
+                <p>Find affordable, convenient storage space in your neighborhood.
+Or earn money by sharing your extra space..</p>
+                <a href="pages/find-storage.html" class="btn-orange">Find Storage</a>
             </div>
         </section>
 
-        <section class="services">
-            <div class="service-card">
-                <i class="fas fa-box-open"></i>
-                <h2>Rent Storage</h2>
-                <p>Find affordable, convenient storage space in your neighborhood. Perfect for students, travelers, and city dwellers.</p>
-                <a href="#">Find a space <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-home"></i>
-                <h2>Become a Host</h2>
-                <p>Earn passive income from your unused space. List your empty closet, garage, or basement and start earning today.</p>
-                <a href="#">List your space <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-question-circle"></i>
-                <h2>How It Works</h2>
-                <p>Our secure platform connects renters and hosts, managing everything from booking to payments.</p>
-                <a href="#">Learn more <i class="fas fa-chevron-right"></i></a>
+        <section id="how-it-works" class="fade-in-section">
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>1. Find Storage</h3>
+                    <p>Browse listings in your area. Use our map to find a convenient location that fits your needs, whether it's a small closet or a large garage.</p>
+                    <a href="pages/find-storage.html" class="card-btn">Find a space <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>2. Book Your Space</h3>
+                    <p>Once you find the perfect spot, book it directly through our secure platform. Coordinate with the host for move-in details.</p>
+                    <a href="pages/become-a-host.html" class="card-btn">List your space <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>3. Store Your Stuff</h3>
+                    <p>Move your belongings into the rented space. Enjoy peace of mind knowing your items are stored safely in your community.</p>
+                    <a href="pages/how-it-works.html" class="card-btn">Learn more <i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 HOUSEBOX. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
