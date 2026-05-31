@@ -295,6 +295,10 @@ nav {
     font-size: 2.5rem;
 }
 
+.how-it-works-section h1 span {
+    color: var(--housebox-orange);
+}
+
 .steps-container {
     display: flex;
     justify-content: center;
